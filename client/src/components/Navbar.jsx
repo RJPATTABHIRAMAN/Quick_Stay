@@ -34,6 +34,7 @@ const Navbar = () => {
       }
     };
 
+    handleScroll(); // Run once on load
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [location]);
